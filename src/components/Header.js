@@ -12,7 +12,7 @@ const Header = () => {
   //destructure hero data
   const { logo } = headerData;
   //header state
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
   //nav mobile state
   const [isNavMobileOpen, setIsNavMobileOpen] = useState(false);
   //scroll event
