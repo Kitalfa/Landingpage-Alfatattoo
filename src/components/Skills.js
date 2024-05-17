@@ -5,10 +5,6 @@ import { useInView } from 'react-intersection-observer';
 import { CircularProgressbar } from 'react-circular-progressbar';
 // import circular styles
 import 'react-circular-progressbar/dist/styles.css';
-// import motion
-import { motion } from 'framer-motion';
-// import fadeIn
-import { fadeIn } from '../variants';
 
 const Skills = () => {
   // destructure useInView hook

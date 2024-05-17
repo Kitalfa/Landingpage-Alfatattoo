@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 //import gallery data
 import { galleryData } from '../data';
 //import photo album & lightbox
@@ -46,7 +46,9 @@ const GallerySection = () => {
         className='mb-8 lg:mb-20'
       >
         <PhotoAlbum
-          onClick={(event, photo, index) => setIndex(index)}
+          onClick={({ index: current }) => {
+            setIndex(current);
+          }}
           layout='rows'
           photos={images}
         />
