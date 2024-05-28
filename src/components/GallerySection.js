@@ -57,7 +57,7 @@ const GallerySection = () => {
           styles={{ container: { backgroundColor: 'rgba(0, 0, 0, 0.9)' } }}
           open={index >= 0}
           index={index}
-          onClose={() => setIndex(-1)}
+          close={() => setIndex(-1)}
         />
       </motion.div>
       {/* btn */}
